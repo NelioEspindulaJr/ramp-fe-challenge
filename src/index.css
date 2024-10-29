@@ -90,9 +90,14 @@ hr.RampBreak--l {
   cursor: pointer;
 }
 
+/*
+  For the first bug, I found this to be the best approach to solve the problem.
+  By simply changing the position from relative to absolute, the dropdown's position
+  maintains its reference point.
+*/
 .RampInputSelect--dropdown-container {
   display: none;
-  position: fixed;
+  position: absolute;
   width: 100%;
   max-width: 700px;
   border: 1px solid var(--color-darker-shade);
